@@ -143,3 +143,14 @@ input[type="button"]:hover {
 img {
   width: 100%;
 }
+
+/*Tablet Design*/
+@media (min-width: 730px) {
+  section {
+    margin: 0 4em;
+  }
+
+  .form-container {
+    margin: 2em -4em 0;
+  }
+}
