@@ -55,3 +55,33 @@ h1 span::before {
   font-weight: bold;
   margin: 0 1em 3em;
 }
+
+.form-container {
+  background-color: white;
+  margin: 2em -1em 0;
+  padding: 3em;
+}
+
+label {
+  color: #2d7d98;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+input[type="text"] {
+  border: 1px solid #707070;
+  width: 100%;
+  padding: 1em;
+  border-radius: 0.5em;
+  margin-top: 1.2em;
+}
+
+.form-container p {
+  color: gray;
+  margin-bottom: 1.5em;
+  font-weight: normal;
+  font-size: 0.9em;
+  margin-top: 0.3em;
+}
