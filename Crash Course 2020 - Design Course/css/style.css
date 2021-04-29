@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+/*Custom properties*/
+:root {
+  --leading: 2em;
+  --graphic-color: #00bfff;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -46,7 +52,7 @@ h1 span::before {
   position: absolute;
   width: 3em;
   height: 0.4em;
-  background-color: #00bfff;
+  background-color: var(--graphic-color);
   bottom: 0;
   z-index: -1;
   margin-left: -0.3em;
@@ -55,6 +61,7 @@ h1 span::before {
 .hero-bg p {
   font-weight: bold;
   margin: 0 1em 3em;
+  line-height: var(--leading);
 }
 
 .form-container {
@@ -120,13 +127,17 @@ input[type="button"]:hover {
 
 .authentic h2::before {
   content: "";
-  background-color: #00bfff;
+  background-color: var(--graphic-color);
   width: 8em;
   height: 0.4em;
   position: absolute;
   bottom: 0;
   z-index: -1;
   margin-left: -0.3em;
+}
+
+.authentic p {
+  line-height: var(--leading);
 }
 
 img {
