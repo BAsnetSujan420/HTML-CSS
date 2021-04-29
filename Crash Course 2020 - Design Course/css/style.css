@@ -103,3 +103,16 @@ input[type="button"] {
 input[type="button"]:hover {
   background-color: rgb(216, 126, 1);
 }
+
+.authentic {
+  margin: 0;
+}
+
+.right-col {
+  text-align: center;
+  margin: 3em 1em;
+}
+
+img {
+  width: 100%;
+}
