@@ -113,6 +113,22 @@ input[type="button"]:hover {
   margin: 3em 1em;
 }
 
+.authentic h2 {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.authentic h2::before {
+  content: "";
+  background-color: #00bfff;
+  width: 8em;
+  height: 0.4em;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -0.3em;
+}
+
 img {
   width: 100%;
 }
