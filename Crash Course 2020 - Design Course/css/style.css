@@ -201,4 +201,25 @@ img {
   .hero-bg p {
     margin-bottom: 0;
   }
+
+  section.authentic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "pic content";
+  }
+
+  .right-col {
+    grid-area: content;
+    padding: 0 10%;
+    text-align: left;
+    align-self: center;
+  }
+
+  img {
+    grid-area: pic;
+  }
+
+  .authentic h2 {
+    margin: 0;
+  }
 }
