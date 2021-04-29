@@ -56,6 +56,14 @@ h1 span::before {
   bottom: 0;
   z-index: -1;
   margin-left: -0.3em;
+  opacity: 0.7;
+  transition: 700ms;
+}
+
+h1 span:hover::before {
+  opacity: 0.9;
+  width: 7.8em;
+  transition: 300ms;
 }
 
 .hero-bg p {
@@ -221,5 +229,21 @@ img {
 
   .authentic h2 {
     margin: 0;
+  }
+}
+
+/*Simple Animation*/
+.top {
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
