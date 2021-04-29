@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
-  </head>
+    <title>Frontend Crash Course 2020</title>
+    </head>
   <body>
+    <div class="overlay" id="overlay">
+      <h3>Searching now...</h3>
+    </div>
     <div class="hero-bg">
       <section class="top">
         <header>
@@ -29,7 +32,7 @@
                   <p>Example: "San Diego"</p>
                 </div>
 
-            <input type="button" value="Find Food Now"></input>
+            <input type="button" value="Find Food Now" id="cta-btn"></input>
           </form>
         </div>
       </section>
@@ -43,5 +46,14 @@
         </div>
         <img src="images/food.jpg" alt="Picture of Food in a bowl">
     </section>
+    
+    <script>
+      const btn = document.getElementById('cta-btn');
+      const overlay = document.getElementById('overlay');
+      btn.addEventListener('click', () => {
+        overlay.style.display = 'grid';
+        overlay.classList.add('animate-overlay');
+      });
+    </script>
   </body>
 </html>

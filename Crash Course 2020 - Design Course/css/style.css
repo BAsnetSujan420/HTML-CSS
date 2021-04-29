@@ -152,6 +152,22 @@ img {
   width: 100%;
 }
 
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  color: white;
+  place-content: center;
+  display: none;
+  opacity: 0;
+}
+
+.animate-overlay {
+  animation: overlay 4s forwards;
+}
+
 /*Tablet Design*/
 @media (min-width: 730px) {
   section {
@@ -245,5 +261,20 @@ img {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes overlay {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opcaity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
