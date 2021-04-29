@@ -175,4 +175,30 @@ img {
     border-radius: 0.5em;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   }
+
+  form {
+    display: flex;
+  }
+
+  .form-left {
+    width: 70%;
+  }
+
+  label {
+    margin: 0;
+  }
+
+  input[type="button"] {
+    height: fit-content;
+    height: -moz-fit-content;
+    font-size: 1.1em;
+    margin-left: 1em;
+    margin-top: 2.2em;
+    padding: 0.7em 0;
+    width: 30%;
+  }
+
+  .hero-bg p {
+    margin-bottom: 0;
+  }
 }
