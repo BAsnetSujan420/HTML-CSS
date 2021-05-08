@@ -37,3 +37,45 @@ body {
 .right-col {
   padding: 6.75rem 8vw; /*108 / 16 = 6.75rem*/
 }
+
+h1 {
+  margin: 0;
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  font-size: 4rem;
+  line-height: 1.2em;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  font-size: 1.125rem;
+  margin-bottom: 0.77rem;
+}
+
+input {
+  width: 100%;
+  background: #ededed;
+  border: 1px solid #c7c7c7;
+  font-size: 1rem;
+  padding: 0.75rem;
+  outline: none;
+  margin-bottom: 2.5em;
+}
+
+button {
+  width: 100%;
+  background: #5200ff;
+  padding: 1em;
+  color: white;
+  border: none;
+  border-radius: 0.4em;
+  font-size: 1.125rem;
+  margin-top: 1.2em;
+  cursor: pointer;
+}
