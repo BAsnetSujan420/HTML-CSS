@@ -154,6 +154,16 @@ nav ul li a:hover {
 }
 
 /*Desktop Design*/
+@media only screen and (min-width: 700px) {
+  .left-col {
+    display: flex;
+  }
+
+  .content p {
+    width: 70%;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
   nav {
     position: unset;
