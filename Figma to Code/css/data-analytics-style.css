@@ -1,0 +1,34 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    220deg,
+    rgba(189, 0, 255, 1) 0%,
+    rgba(0, 163, 255, 1) 100%
+  );
+  height: 100vh;
+  background-attachment: fixed;
+  font-family: "Poppins";
+}
+
+.container {
+  margin: 1em 0.5em;
+  height: calc(100% - 2em);
+}
+
+section {
+  background: #221f26 url("../images/neon-bg.jpeg");
+  background-size: cover;
+  background-blend-mode: screen;
+  background-position: -100px;
+  height: 100%;
+  padding: 2em;
+}
+
+nav {
+  display: none;
+}
