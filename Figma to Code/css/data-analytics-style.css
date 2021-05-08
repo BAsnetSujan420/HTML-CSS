@@ -34,10 +34,6 @@ section {
   border-radius: 13px;
 }
 
-nav {
-  display: none;
-}
-
 .logo {
   color: var(--primary-color);
   font-weight: 800;
@@ -104,4 +100,53 @@ h1 {
 
 .cta:hover {
   background: var(--primary-color);
+}
+
+/*Mobile Navigation*/
+nav {
+  position: fixed;
+  z-index: 1;
+  background: #2c2931;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  max-width: 300px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li {
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.875em 5em 0.875em 4em;
+}
+
+nav ul li a:hover {
+  background: #413e47;
+}
+
+.back-btn {
+  transform: scaleX(-1);
+  padding: 3em 4em 2em;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.back-btn:hover {
+  transform: scaleX(-1) translateX(6px);
+}
+
+.active {
+  background: var(--primary-color);
+}
+.active:hover {
+  background: #4497ff;
 }
