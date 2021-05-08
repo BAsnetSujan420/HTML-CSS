@@ -176,4 +176,27 @@ nav ul li a:hover {
   header {
     padding: 1.6em;
   }
+
+  .container {
+    display: flex;
+    padding: 2em;
+  }
+  .logo {
+    text-align: left;
+  }
+
+  section {
+    border-radius: unset;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    width: 100%;
+    background-size: cover;
+    background-position: 0;
+    background-attachment: unset;
+  }
+
+  .content {
+    justify-self: left;
+    margin-left: 4em;
+  }
 }
