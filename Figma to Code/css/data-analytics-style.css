@@ -152,3 +152,28 @@ nav ul li a:hover {
 .active:hover {
   background: #4497ff;
 }
+
+/*Desktop Design*/
+@media only screen and (min-width: 1000px) {
+  nav {
+    position: unset;
+    transform: translateX(0) !important;
+    border-radius: unset;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    height: 100%;
+  }
+
+  .menu-btn,
+  .back-btn {
+    display: none;
+  }
+
+  ul {
+    margin-top: 4em;
+  }
+
+  header {
+    padding: 1.6em;
+  }
+}
