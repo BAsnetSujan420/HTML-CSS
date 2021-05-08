@@ -53,3 +53,12 @@ p.description {
     margin-left: 1em;
   }
 }
+
+@media only screen and (min-width: 950px) {
+  html {
+    font-size: 18px;
+  }
+  main {
+    max-width: 600px;
+  }
+}
