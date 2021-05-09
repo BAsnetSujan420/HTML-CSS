@@ -32,3 +32,64 @@ h1 {
 .labels {
   display: none;
 }
+
+.search {
+  border: none;
+  padding: 0.8em;
+  border-radius: 2em;
+  background: white url("./assets/search.svg") no-repeat right 0.8em center;
+  width: 100%;
+}
+
+.search:focus {
+  outline: thin dotted;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3em;
+}
+
+.far,
+.fas {
+  cursor: pointer;
+}
+
+.menu {
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+.cars,
+.labels {
+  margin: -1em -1em 2em;
+  padding: 1em;
+  border-radius: 6px;
+}
+
+.cars:hover {
+  background: white;
+}
+
+.car-name {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.22rem;
+}
+
+.car-location {
+  color: var(--text-color);
+  font-size: 1.125rem;
+}
+
+.cols-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-price {
+  font-size: 1.5rem;
+  margin: 0;
+}
