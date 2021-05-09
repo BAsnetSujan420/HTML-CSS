@@ -1,0 +1,34 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #565656;
+  --primary-color: #008ad8;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  margin: 2.8em;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.headings p {
+  font-size: 1.125rem;
+  color: var(--text-color);
+}
+
+.filter,
+.labels {
+  display: none;
+}
