@@ -108,4 +108,21 @@ h1 {
 .blur {
   opacity: 0.3;
   top: 1em;
+  animation: pulse 2s alternate-reverse infinite;
+}
+
+.drone {
+  animation: hover 2s alternate-reverse infinite;
+}
+
+@keyframes hover {
+  from {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
 }
