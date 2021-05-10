@@ -1,0 +1,51 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Bebas Neue";
+}
+
+.menu-btn {
+  width: 2.5em;
+  cursor: pointer;
+}
+
+.top-bg-container {
+  height: 100vh;
+  position: absolute;
+  width: 90%;
+  top: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 80% auto;
+  z-index: -1;
+}
+
+.light-streaks {
+  background: #b2dd9e url("./assets/streaks.jpg");
+  background-blend-mode: screen;
+  background-size: cover;
+  height: 100vh;
+}
+
+.blue-col {
+  background-color: #7988be;
+}
