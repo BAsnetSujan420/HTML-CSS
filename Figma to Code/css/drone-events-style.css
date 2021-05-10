@@ -246,3 +246,67 @@ h2 {
 .gallery-container img:nth-of-type(5) {
   grid-area: e;
 }
+
+/* Contact Section*/
+.contact {
+  background: #b2dd9e;
+}
+
+h3 {
+  padding: 1em 1em 1em 10%;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 0;
+  font-weight: normal;
+}
+
+.cols-2 {
+  width: 90%;
+  margin: 2em 2em 2em 10%;
+  padding-right: 2em;
+  padding-bottom: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+button {
+  background: black;
+  border: none;
+  padding: 0.8em;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.other-info {
+  margin-top: 3em;
+  width: 50%;
+}
+
+.other-info ul li {
+  padding: 0.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  border-radius: 0.2em;
+  font-family: "Montserrat";
+  font-size: 0.9rem;
+}
+
+.other-info a {
+  color: black;
+}
