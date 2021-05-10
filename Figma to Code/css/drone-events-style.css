@@ -343,4 +343,26 @@ button {
   .type p {
     width: 80%;
   }
+
+  /* Nav */
+  .menu-btn,
+  .exit-btn {
+    display: none;
+  }
+
+  nav ul {
+    transform: translateX(0);
+    width: unset;
+    background: none;
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 0;
+    position: unset;
+    height: auto;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 0 1em;
+  }
 }
