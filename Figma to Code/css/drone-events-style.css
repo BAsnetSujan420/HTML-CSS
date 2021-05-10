@@ -130,6 +130,7 @@ h1 {
 .drone {
   position: absolute;
   left: 0;
+  z-index: 1;
 }
 
 .blur {
@@ -364,5 +365,60 @@ button {
   nav ul li a {
     font-size: 1rem;
     padding: 0 1em;
+  }
+
+  /* Quote Section */
+  .quote {
+    width: 80%;
+    display: grid;
+    place-content: center;
+  }
+
+  blockquote,
+  cite {
+    width: 50%;
+    justify-self: center;
+  }
+
+  blockquote {
+    font-size: 2rem;
+  }
+
+  /* Gallery section */
+  .gallery {
+    display: flex;
+    gap: 4em;
+  }
+
+  .gallery-container {
+    margin-top: -5em;
+    z-index: 1;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 91.6%;
+  }
+
+  /* contact section */
+
+  .cols-2 {
+    display: flex;
+    gap: 3em;
+  }
+
+  .form-container,
+  .other-info {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .other-info {
+    margin-top: 2em;
+  }
+
+  input {
+    padding: 1.5em;
   }
 }
