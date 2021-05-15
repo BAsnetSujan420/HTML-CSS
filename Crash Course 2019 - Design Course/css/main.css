@@ -21,3 +21,23 @@ ul {
   text-align: center;
   padding: 0.8em 1.2em;
 }
+
+/* HEADER SECTION - Navigation*/
+
+.logo {
+  width: 130px;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 25px;
+  margin-top: 45%;
+}
