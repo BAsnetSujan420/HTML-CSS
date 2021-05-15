@@ -112,3 +112,45 @@ h1,
 .blue-container ul li:nth-child(3) img {
   width: 8%;
 }
+
+/*GRAY CONTAINER*/
+
+gray-container {
+  background: #f6f6f6;
+  padding: 4em 0 2em;
+  margin-top: -3%;
+}
+
+.gray-container ul li:first-child {
+  margin: 2em 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-weight: bold;
+  color: #00c2ff;
+}
+
+/*Call to Action*/
+
+h2 {
+  margin-top: 7%;
+}
+
+.cta {
+  background-color: #00cc80;
+  width: calc(100%-1em);
+  display: block;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5em;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 3% auto 7%;
+  position: relative;
+  z-index: 4;
+}
