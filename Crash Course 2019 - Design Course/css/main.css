@@ -154,3 +154,54 @@ h2 {
   position: relative;
   z-index: 4;
 }
+
+/*FOOTER SECTION*/
+
+.footer-container {
+  width: 100%;
+  background: #3d444a;
+  color: white;
+  padding: 3em 0;
+  border-top-right-radius: 40px;
+  transform: skewY(2deg);
+}
+
+.footer-container .container {
+  transform: skewY(-2deg);
+}
+
+.footer-container:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #3d444a;
+  position: absolute;
+  top: -39px;
+  left: 0;
+  z-index: -2;
+}
+
+.footer-container:after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+ul.footer-links {
+  margin: 0 auto;
+}
+
+ul.footer-links li {
+  display: inline-block;
+}
+
+ul.footer-links li a {
+  color: #9d9d9d;
+  font-size: 0.8em;
+}
