@@ -41,3 +41,19 @@ header {
   width: 25px;
   margin-top: 45%;
 }
+
+/*HERO SECTION*/
+.server-img {
+  width: 70%;
+  margin: 2em auto 2em 25%;
+}
+
+h1,
+.subhead {
+  position: relative;
+  z-index: 3;
+}
+
+.subhead {
+  font-size: 1.1em;
+}
