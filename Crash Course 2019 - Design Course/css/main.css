@@ -28,9 +28,9 @@ ul {
   width: 130px;
 }
 
-/* .hide-mobile {
+.hide-mobile {
   display: none;
-} */
+}
 
 header {
   display: flex;
@@ -244,4 +244,60 @@ ul.footer-links li {
 ul.footer-links li a {
   color: #9d9d9d;
   font-size: 0.8em;
+}
+
+/*Tablet Design*/
+
+@media only screen and (min-width: 650px) {
+  .server-img {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  .sub-head {
+    font-size: 1.4em;
+    margin-bottom: 12%;
+  }
+
+  .blue-container {
+    margin: 0;
+  }
+
+  .blue-container img {
+    width: 20%;
+  }
+
+  .blue-container ul li:nth-child(3) img {
+    width: 11%;
+    margin-top: -6px;
+  }
+
+  .blue-container ul {
+    display: flex;
+    margin-top: -1em;
+    align-items: center;
+  }
+
+  .blue-container ul li {
+    margin-bottom: 0;
+  }
+
+  .blue-container ul li p {
+    padding: 0 0.8em;
+  }
+
+  .gray-container ul {
+    display: flex;
+  }
+  .gray-container ul li:first-child {
+    margin: 0;
+  }
+
+  nav ul {
+    width: 40%;
+  }
 }
