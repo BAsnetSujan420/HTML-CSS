@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 body {
   margin: 0;
@@ -28,9 +28,9 @@ ul {
   width: 130px;
 }
 
-.hide-mobile {
+/* .hide-mobile {
   display: none;
-}
+} */
 
 header {
   display: flex;
@@ -40,6 +40,46 @@ header {
 .menu {
   width: 25px;
   margin-top: 45%;
+}
+
+/*MOBILE MENU - navigation*/
+
+nav ul {
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: rgb(36, 41, 44);
+  height: 100%;
+  z-index: 7;
+  padding-top: 3em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  background-color: rgb(52, 59, 63);
+}
+
+nav ul li a:hover {
+  background-color: rgb(65, 73, 78);
+}
+
+.exit-btn {
+  text-align: right;
+  margin-bottom: 1em;
+  margin-top: -1.3em;
+  padding: 0 1.4em;
+}
+
+.exit-btn img {
+  width: 15px;
+  cursor: pointer;
 }
 
 /*HERO SECTION*/
@@ -115,7 +155,7 @@ h1,
 
 /*GRAY CONTAINER*/
 
-gray-container {
+.gray-container {
   background: #f6f6f6;
   padding: 4em 0 2em;
   margin-top: -3%;
