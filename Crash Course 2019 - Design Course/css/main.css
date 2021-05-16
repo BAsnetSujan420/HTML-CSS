@@ -162,7 +162,7 @@ h1,
 }
 
 .gray-container ul li:first-child {
-  margin: 2em 0;
+  margin-bottom: 2em;
 }
 
 figure {
@@ -292,12 +292,60 @@ ul.footer-links li a {
 
   .gray-container ul {
     display: flex;
-  }
-  .gray-container ul li:first-child {
-    margin: 0;
+    margin-bottom: -2em;
   }
 
   nav ul {
     width: 40%;
+  }
+}
+
+@media only screen and (min-width: 875px) {
+  .sub-head {
+    margin-bottom: 15%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cta {
+    width: 50%;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .show-desktop {
+    display: block;
+    margin: 0 auto 13% auto;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  nav ul {
+    position: inherit;
+    width: auto;
+    height: auto;
+    background: none;
+    display: flex;
+    padding-top: 0;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    color: black;
+    background-color: inherit;
+    text-align: right;
+    padding: 1em 2em;
+  }
+
+  nav ul li a:hover {
+    background-color: inherit;
   }
 }
