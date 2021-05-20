@@ -102,3 +102,20 @@ body {
 .price-column.popular .divider {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.feature img {
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 0.5rem;
+}
+
+.feature.inactive {
+  color: #999;
+  text-decoration-line: line-through;
+}
