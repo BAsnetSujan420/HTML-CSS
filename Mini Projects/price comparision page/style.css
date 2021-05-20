@@ -20,3 +20,40 @@ body {
   align-items: center;
   font-family: var(--body-font-family);
 }
+
+.price-comparison {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin: 1rem;
+}
+
+.price-column {
+  background-color: white;
+  box-shadow: 0 7px 3px rgba(52, 31, 97, 0.1);
+  padding: 2rem;
+  flex-grow: 1;
+  max-width: 275px;
+  border-radius: 8px;
+}
+.price-column.popular {
+  position: relative;
+  background-color: var(--accent-color);
+  color: white;
+  box-shadow: 0 7px 3px rgba(52, 13, 135, 0.3);
+  margin-top: -1.5rem;
+  padding-top: 3.5rem;
+  margin-bottom: -1.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.price-column:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.price-column:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
