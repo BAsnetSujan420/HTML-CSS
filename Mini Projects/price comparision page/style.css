@@ -129,3 +129,28 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.cta {
+  border: none;
+  background-color: var(--accent-color);
+  color: white;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 3rem;
+  transition: 100ms;
+  transform: scale(1);
+}
+
+.cta:hover,
+cta:focus {
+  transform: scale(1.1);
+}
+
+.price-column.popular .cta {
+  background-color: #f8f9fb;
+  color: var(--accent-color);
+}
