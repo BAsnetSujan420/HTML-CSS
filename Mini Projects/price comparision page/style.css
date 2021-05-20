@@ -119,3 +119,13 @@ body {
   color: #999;
   text-decoration-line: line-through;
 }
+.most-popular {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  text-align: center;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  text-transform: uppercase;
+}
