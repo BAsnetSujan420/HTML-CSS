@@ -57,3 +57,36 @@ body {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+
+.price-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  font-size: 3.5rem;
+}
+
+.dollar-sign {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+.per-month {
+  font-size: 0.75rem;
+  align-self: flex-end;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+}
+
+.plan-name {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
