@@ -202,3 +202,17 @@ body {
 .search-button:hover {
   background-color: #f0f0f0;
 }
+
+.menu-icons {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, auto);
+  gap: 1.5rem;
+}
+
+.menu-channel-icon {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #aaa;
+}
