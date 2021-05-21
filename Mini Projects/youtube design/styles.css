@@ -114,3 +114,46 @@ body {
   color: #555;
   cursor: pointer;
 }
+
+.videos {
+  background-color: #f9f9f9;
+}
+
+/*Category Section*/
+.category-section {
+  padding: 1rem 2rem;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.category-section {
+  display: flex;
+  overflow: hidden;
+}
+
+.category {
+  margin-right: 1rem;
+  word-wrap: none;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background-color: #e7e7e7;
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+
+.category:hover {
+  background-color: #ddd;
+}
+
+.category.active {
+  background-color: #606060;
+  color: white;
+  border-color: #eee;
+}
+
+.category:last-child {
+  margin-right: none;
+}
