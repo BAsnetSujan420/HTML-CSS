@@ -25,9 +25,9 @@ body {
     color: var(--primary-color);
   }
 
-  //   nav {
-  //     display: none;
-  //   }
+  nav {
+    display: none;
+  }
 
   .container {
     display: flex;
@@ -195,7 +195,7 @@ iframe {
   height: 300px;
 }
 
-/*Mobile Navigation*/
+/*Mobile Navigation Menu*/
 
 nav.menu-btn {
   display: block;
@@ -235,4 +235,8 @@ nav {
   float: right;
   margin: 0.5em;
   cursor: pointer;
+}
+
+.menu-btn {
+  display: block;
 }

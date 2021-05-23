@@ -25,6 +25,10 @@ body {
   color: var(--primary-color);
 }
 
+.navbar nav {
+  display: none;
+}
+
 .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,7 +193,7 @@ iframe {
   height: 300px;
 }
 
-/*Mobile Navigation*/
+/*Mobile Navigation Menu*/
 nav.menu-btn {
   display: block;
 }
@@ -226,5 +230,9 @@ nav li a:hover {
   float: right;
   margin: 0.5em;
   cursor: pointer;
+}
+
+.menu-btn {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
