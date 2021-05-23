@@ -382,4 +382,25 @@ nav li a:hover {
     height: 100%;
   }
 }
+
+@media only screen and (min-width: 1250px) {
+  .features-section:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -4em;
+  }
+  .features-section:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url("https://assets.codepen.io/2621168/dots.svg") no-repeat;
+    left: 4.5em;
+    top: 2em;
+  }
+}
 /*# sourceMappingURL=style.css.map */
