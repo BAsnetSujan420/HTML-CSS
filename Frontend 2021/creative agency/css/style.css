@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+:root {
+  --primary-color: #f60f20;
+}
+
 html,
 body {
   font-family: "Poppins", sans-serif;
@@ -23,4 +27,51 @@ body {
   font-size: 2rem;
   font-weight: 700;
   z-index: 10;
+}
+
+/*HOME PAGE*/
+
+.home-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 110%;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 100px;
+}
+
+.home-content {
+  position: relative;
+  z-index: 10;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+p {
+  margin: 20px 0 10px;
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 20px 0;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn:hover {
+  transform: scale(0.9);
 }
