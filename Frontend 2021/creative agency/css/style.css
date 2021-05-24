@@ -75,3 +75,19 @@ p {
 .btn:hover {
   transform: scale(0.9);
 }
+
+/*NAVIGATION*/
+
+.toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color) url(../images/menu.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 20;
+  cursor: pointer;
+}
