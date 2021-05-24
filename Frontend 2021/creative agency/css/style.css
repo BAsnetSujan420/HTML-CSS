@@ -160,3 +160,23 @@ p {
   bottom: 20px;
   transform: scale(0.5);
 }
+
+@media (max-width: 1068px) {
+  .home-img {
+    display: none;
+  }
+
+  .logo {
+    top: 10px;
+    left: 40px;
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 100px 50px;
+  }
+
+  .navigation ul li a {
+    font-size: 2rem;
+  }
+}
