@@ -99,3 +99,31 @@ section {
     min-width: 15em;
   }
 }
+
+.featured {
+  background: #eee;
+
+  &__item {
+    display: block;
+    position: relative;
+    transform: scale(0.85);
+    transition: transform 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      padding: 75% 75% 0 0;
+      background: red;
+      border-radius: 50%;
+      background: #2193b0;
+      z-index: -1;
+    }
+  }
+}
