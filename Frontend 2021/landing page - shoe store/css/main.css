@@ -168,16 +168,44 @@ section {
 .product {
   background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
   padding: 3em;
-  border-radius: 3em;
-  margin-bottom: 3em;
+  border-radius: 0.5em;
+  margin-bottom: 5em;
   text-align: center;
 }
 
 .product__title {
-  font-size: 4em;
+  font-size: clamp(3rem, calc(5vw + 1rem), 5.5rem);
   color: #fff;
-  line-height: 1.1;
+  line-height: 1;
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+.product__img {
+  margin: -5em 0 0 0;
+}
+
+@media (min-width: 45em) {
+  .product {
+    text-align: left;
+    margin-bottom: 9em;
+  }
+  .product__title {
+    margin: 0;
+  }
+  .product__img {
+    float: right;
+    width: 65%;
+    shape-outside: url(../img/shoe-1.png);
+    shape-margin: 1em;
+    margin: 0 -5em 0 0;
+  }
+  .product.shoe-left .product__img {
+    float: left;
+    shape-outside: url("../img/shoe-2.png");
+    margin: 0 0 0 -5em;
+    shape-margin: 2em;
+  }
 }
 
 .shoe-red {
