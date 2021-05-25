@@ -147,3 +147,21 @@ section {
     }
   }
 }
+
+.product {
+  background: radial-gradient(
+    var(--clr-inner, limegreen),
+    var(--clr-outer, purple)
+  );
+  padding: 3em;
+  border-radius: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+
+  &__title {
+    font-size: 4em;
+    color: #fff;
+    line-height: 1.1;
+    text-shadow: 0 0 0.2em rgba(#000, 0.2);
+  }
+}
