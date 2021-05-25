@@ -75,3 +75,27 @@ p {
     background-position: center center;
   }
 }
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 5rem;
+}
+
+section {
+  padding: 7em 0;
+}
+
+.row {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > * {
+    flex-basis: 30%;
+    min-width: 15em;
+  }
+}
