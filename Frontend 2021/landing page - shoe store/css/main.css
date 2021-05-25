@@ -179,4 +179,26 @@ section {
   line-height: 1.1;
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 }
+
+.shoe-red {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}
+
+.shoe-white {
+  --clr-inner: #b9a376;
+  --clr-outer: #d8bf8d;
+  --clr-accent: #2f4858;
+}
+
+.shoe-blue {
+  --clr-inner: #5fc9e0;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
+}
+
+.hero {
+  --clr-accent: #faa700;
+}
 /*# sourceMappingURL=main.css.map */
