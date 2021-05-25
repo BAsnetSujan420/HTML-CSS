@@ -108,10 +108,19 @@ section {
     position: relative;
     transform: scale(0.85);
     transition: transform 250ms ease-in-out;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    line-height: 1.2;
 
     &:hover,
     &:focus {
       transform: scale(1);
+
+      .featured__details {
+        opacity: 1;
+        text-shadow: 0 0 2em rgba(#fff, 1);
+      }
     }
 
     &::after {
@@ -124,6 +133,17 @@ section {
       border-radius: 50%;
       background: #2193b0;
       z-index: -1;
+    }
+  }
+
+  &__details {
+    opacity: 0;
+    transition: opacity 250ms linear;
+
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 2.5rem;
     }
   }
 }

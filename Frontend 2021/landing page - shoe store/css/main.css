@@ -125,11 +125,20 @@ section {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .featured__item:hover, .featured__item:focus {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.featured__item:hover .featured__details, .featured__item:focus .featured__details {
+  opacity: 1;
+  text-shadow: 0 0 2em white;
 }
 
 .featured__item::after {
@@ -142,5 +151,17 @@ section {
   border-radius: 50%;
   background: #2193b0;
   z-index: -1;
+}
+
+.featured__details {
+  opacity: 0;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+}
+
+.featured__details span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 /*# sourceMappingURL=main.css.map */
