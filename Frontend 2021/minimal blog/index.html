@@ -13,10 +13,10 @@
       <div class="menuToggle"></div>
     </header>
     <ul class="navigation">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#post">Post</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#post" onclick="toggleMenu()">Post</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
     </ul>
     <!-- Banner -->
     <section class="banner" id="home">
@@ -259,6 +259,7 @@
       </ul>
       <p class="copyright">CopyRight &copy; 2021. All Right Reserved</p>
     </footer>
+
     <script>
       const menuToggle = document.querySelector(".menuToggle");
       const navigation = document.querySelector(".navigation");
@@ -271,6 +272,11 @@
         const header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
+
+      function toggleMenu() {
+        menuToggle.classList.remove("active");
+        navigation.classList.remove("active");
+      }
     </script>
   </body>
 </html>
