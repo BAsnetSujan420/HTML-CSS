@@ -250,3 +250,40 @@ p {
 .post .contentBox .postColumn .postBox.extraHeight {
   height: 600px;
 }
+
+.post .contentBox .postColumn .postBox .textBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  transform: 0.25s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.post .contentBox .postColumn .postBox:hover .textBox {
+  opacity: 0.95;
+  visibility: visible;
+}
+
+.post .contentBox .postColumn .postBox .textBox h3 {
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: var(--black);
+}
+
+.post .contentBox .postColumn .postBox .textBox .btn {
+  padding: 4px 10px;
+  background: var(--black);
+  color: var(--white);
+  font-weight: 300;
+  font-size: 1em;
+}
