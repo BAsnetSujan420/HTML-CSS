@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -387,4 +388,64 @@ footer .footerMenu li a {
   color: var(--black);
   text-align: center;
   letter-spacing: 1px;
+}
+
+/*Mobile Design*/
+
+@media (max-width: 720px) {
+  header {
+    padding: 20px;
+  }
+  header.sticky {
+    padding: 10px 20px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .banner .contentBox {
+    padding: 40px 30px;
+  }
+
+  .about .contentBox {
+    grid-template-columns: 1fr;
+  }
+
+  .post .contentBox {
+    grid-template-columns: 1fr;
+  }
+
+  .post .contentBox .postColumn .postBox,
+  .post .contentBox .postColumn .postBox.extraHeight {
+    height: 300px;
+  }
+
+  .contact .contactForm .row {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+
+  footer .footerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  footer .footerMenu li a {
+    margin: 5px 0;
+  }
+
+  .title {
+    padding-top: 50px;
+  }
+
+  .mgt60 {
+    margin-top: 0;
+  }
 }
