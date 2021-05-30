@@ -168,3 +168,53 @@ section {
   color: var(--white);
   background: var(--black);
 }
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title h2 {
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.title h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 6px;
+  background: var(--black);
+}
+
+p {
+  color: var(--black);
+  font-weight: 300;
+  text-align: justify;
+}
+
+.about .contentBox {
+  position: relative;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.about .contentBox .content {
+  position: relative;
+}
+
+.about .contentBox .content .imgBox {
+  min-height: 400px;
+}
