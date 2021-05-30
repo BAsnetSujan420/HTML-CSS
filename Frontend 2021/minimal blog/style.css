@@ -95,3 +95,76 @@ header.sticky {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+section {
+  position: relative;
+  padding: 100px;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--white);
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .contentBox {
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner .contentBox h2 {
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.banner .contentBox h4 {
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 20px;
+  color: var(--black);
+  border: 2px solid var(--black);
+  background: var(--white);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  color: var(--white);
+  background: var(--black);
+}
