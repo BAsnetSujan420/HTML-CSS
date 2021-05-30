@@ -356,3 +356,35 @@ p {
   color: var(--white);
   background: var(--black);
 }
+
+footer {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f8f8f8;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+footer .footerMenu {
+  display: flex;
+}
+
+footer .footerMenu li {
+  list-style: none;
+}
+
+footer .footerMenu li a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 20px;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.copyright {
+  color: var(--black);
+  text-align: center;
+  letter-spacing: 1px;
+}
