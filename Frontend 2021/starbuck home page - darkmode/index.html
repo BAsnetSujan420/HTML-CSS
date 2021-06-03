@@ -20,6 +20,7 @@
           <li><a href="#">Menu</a></li>
           <li><a href="#">What's New</a></li>
           <li><a href="#">Contact</a></li>
+        <li><span class="themeSwitch"></span></li>
         </ul>
       </header>
       <div class="content">
@@ -42,5 +43,14 @@
         </a></li>
       </ul>
     </section>
+
+    <script>
+      const themeSwitch = document.querySelector('.themeSwitch');
+      const body = document.querySelector('body');
+      themeSwitch.onclick = () => {
+          themeSwitch.classList.toggle('active');
+          body.classList.toggle('dark');
+          }
+    </script>
   </body>
 </html>
