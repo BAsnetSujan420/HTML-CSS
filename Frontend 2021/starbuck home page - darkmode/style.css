@@ -20,6 +20,11 @@
   --white: #113828;
   --black2: #124e36;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 section {
   position: relative;
   width: 100%;
@@ -194,4 +199,58 @@ header ul li a {
 
 .themeSwitch.active::before {
   content: "\f185";
+}
+
+/*Mobile Design*/
+
+@media only screen and (max-width: 991px) {
+  section {
+    padding: 150px 20px;
+  }
+  header {
+    padding: 20px;
+  }
+  .social-links {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  .content .textBox,
+  .content .imgBox {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .content .imgBox img {
+    max-width: 250px;
+  }
+
+  .content .imgBox::before {
+    clip-path: circle(125px at center);
+  }
+
+  .content .textBox h2 {
+    font-size: 1.75em;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url("images/menu.png");
+    filter: invert(1);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-top: -25px;
+    z-index: 1000;
+  }
 }
