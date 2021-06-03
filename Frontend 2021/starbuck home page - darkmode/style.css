@@ -125,3 +125,38 @@ header ul li a {
   z-index: 1;
   max-width: 350px;
 }
+
+.social-links {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links li {
+  list-style: none;
+}
+
+.social-links li a {
+  display: inline-block;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  background: var(--black2);
+  color: var(--white2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-links li a .fa {
+  font-size: 1.2em;
+}
+
+.social-links li a:hover {
+  background: var(--green);
+}
