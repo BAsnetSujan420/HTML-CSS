@@ -101,7 +101,7 @@ header ul li a {
   color: var(--green);
 }
 
-.content .textBox h2 span {
+.dark .content .textBox h2 span {
   color: #00ff9b;
 }
 .content .textBox p {
@@ -251,6 +251,43 @@ header ul li a {
     background-repeat: no-repeat;
     cursor: pointer;
     margin-top: -25px;
-    z-index: 1000;
+    z-index: 4;
+  }
+
+  .toggle.active {
+    background: url("images/close.png");
+    filter: invert(1);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .navigation.active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    flex-direction: column;
+    z-index: 3;
+  }
+
+  .dark .toggle {
+    filter: invert(0);
+  }
+
+  header ul li {
+    margin: 10px 0;
+    margin-left: 0;
+  }
+
+  header ul li a {
+    font-size: 1.5em;
+    font-weight: 300;
   }
 }
