@@ -1,0 +1,30 @@
+.home {
+  background: radial-gradient(#525252, #131313);
+}
+
+.showcase {
+  display: grid;
+  min-height: 90vh;
+  grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+  grid-template-rows: 0.4fr 1.5fr 0.7fr;
+
+  .title {
+    grid-column: 2/3;
+    align-self: flex-end;
+  }
+  img {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    height: 100%;
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+  }
+  .info {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    h3 {
+      padding-bottom: 3rem;
+    }
+  }
+}

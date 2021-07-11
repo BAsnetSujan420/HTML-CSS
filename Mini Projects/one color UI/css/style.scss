@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #f8f8f8;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "Lobster", sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Lobster", sans-serif;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@import "header";
+@import "home";
+@import "features";
+@import "soon";
+@import "footer";
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+  nav {
+    ul {
+      li {
+        margin-left: 5rem;
+      }
+    }
+  }
+
+  .showcase {
+    grid-template-columns: 10% 1fr 10%;
+    .image {
+      width: 110%;
+      object-fit: contain;
+    }
+    img,
+    h1,
+    .info {
+      grid-column: 2/3;
+      align-self: center;
+      text-align: center;
+    }
+    p {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .featured {
+    align-items: center;
+    h1 {
+      margin-top: 2rem;
+    }
+    h4 {
+      font-size: 2rem;
+    }
+    .cards {
+      margin-top: 4rem;
+      flex-direction: column;
+      gap: 4rem;
+      width: 100%;
+
+      .card {
+        margin: 5rem 0rem;
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .soon {
+    overflow: hidden;
+    img {
+      width: 60%;
+    }
+    h1 {
+      font-size: 5rem;
+      text-align: center;
+    }
+    .circle {
+      height: 45%;
+    }
+  }
+
+  footer {
+    h2 {
+      flex: 1;
+    }
+  }
+}

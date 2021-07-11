@@ -1,0 +1,48 @@
+.nav-container {
+  background: rgb(7, 7, 7);
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    list-style: none;
+  }
+
+  .logo {
+    flex: 2;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 6rem;
+      width: 6rem;
+      border-radius: 50%;
+      background: #f54538;
+      transform: translate(-10%, -20%);
+      mix-blend-mode: screen;
+    }
+  }
+
+  .order {
+    background: #f54538;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+  }
+}
