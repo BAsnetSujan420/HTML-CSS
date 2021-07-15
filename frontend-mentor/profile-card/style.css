@@ -1,0 +1,127 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --grayish-dark-blue: hsl(227, 10%, 46%);
+  --dark-grey: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.125rem;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background: var(--dark-cyan);
+  /* position: relative; */
+  z-index: -1;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 380px;
+  width: 380px;
+  background-image: url("images/bg-pattern-bottom.svg");
+  z-index: 1;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 320px;
+  width: 320px;
+  background-image: url("images/bg-pattern-bottom.svg");
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.container .card {
+  text-align: center;
+  width: 350px;
+  position: relative;
+  z-index: 2;
+}
+
+.container .card .card-top {
+  height: 150px;
+  width: 100%;
+  background-image: url("images/bg-pattern-card.svg");
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container .card .contentBox {
+  background: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.container .card .contentBox .avatar img {
+  border-radius: 50%;
+  border: 4px solid #fff;
+  transform: translateY(-50%);
+}
+
+.container .card .contentBox .profile {
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+.container .card .contentBox .stats {
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.3rem;
+}
+
+.card .profile p {
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+.card .profile h4 span {
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+.card .stats h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.card .stats p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+@media (min-width: 1024px) {
+  .container::before {
+    top: -180px;
+    height: 600px;
+    width: 700px;
+  }
+
+  .container::after {
+    bottom: -180px;
+    height: 600px;
+    width: 700px;
+  }
+}
