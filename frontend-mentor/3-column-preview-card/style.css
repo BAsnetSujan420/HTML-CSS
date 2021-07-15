@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --text-clr: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Lexend Deca";
+  color: var(--text-clr);
+}
+
+.container {
+  display: flex;
+  width: 1024px;
+  height: auto;
+}
+
+.container .card .contentBox {
+  padding-right: 2.5rem;
+}
+
+.container .card:nth-child(1) {
+  background: var(--bright-orange);
+  border-top-left-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+}
+
+.container .card:nth-child(2) {
+  background: var(--dark-cyan);
+}
+
+.container .card:nth-child(3) {
+  background: var(--very-dark-cyan);
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+
+.container .card {
+  padding: 2.6rem;
+}
+
+.container .card .contentBox h1 {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.5rem;
+}
+
+.container .card .contentBox p {
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.container .card .contentBox .cta {
+  display: inline-block;
+  border: 2px solid white;
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  margin-top: 4rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 80%;
+    height: 90vh;
+  }
+
+  .container .card .contentBox .cta {
+    color: var(--very-dark-cyan);
+    background: #fff;
+    margin-top: 2rem;
+  }
+
+  .container .card:nth-child(1) {
+    border-radius: 0;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+  }
+
+  .container .card:nth-child(3) {
+    border-radius: 0;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+  }
+}
