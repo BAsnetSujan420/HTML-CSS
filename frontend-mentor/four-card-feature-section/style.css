@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.4;
+  font-family: "Poppins";
+  background: var(--very-light-gray);
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 500px;
+}
+
+header h1 span {
+  font-weight: 200;
+  color: var(--grayish-blue);
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 1140px;
+}
+
+.card {
+  padding: 30px;
+  width: 330px;
+  margin: 15px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  background: purple;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 5px;
+}
+
+.card-blue::before {
+  background: var(--blue);
+}
+
+.card-red::before {
+  background: var(--red);
+}
+
+.card-orange::before {
+  background: var(--orange);
+}
+
+.card-cyan::before {
+  background: var(--cyan);
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  max-width: 40px;
+}
+.card h3 {
+  margin: 0;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 15px 0 30px;
+}
+
+.card-center {
+  transform: translateY(50%);
+}
+
+@media (max-width: 775px) {
+  .card-center {
+    transform: translateY(0);
+  }
+}
