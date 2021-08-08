@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="top">
+        <div class="userDetails">
+          <div class="profile_img">
+            <img src="Images/logo.jpg" class="cover" alt="logo" />
+          </div>
+          <h3>online tutorials<br /><span>Patna, India</span></h3>
+        </div>
+        <div>
+          <img src="Images/dot.png" alt="" class="dot" />
+        </div>
+      </div>
+      <div class="imgBox">
+        <img src="Images/bg.jpg" class="cover" alt="" />
+      </div>
+      <div class="actionBtns">
+        <div class="left">
+          <img src="Images/heart.png" class="heart" onclick="likeButton()" />
+          <img src="Images/comment.png" alt="" />
+          <img src="Images/share.png" alt="" />
+        </div>
+        <div class="right">
+          <img src="Images/bookmark.png" alt="" />
+        </div>
+      </div>
+      <h4 class="likes">3,648 likes</h4>
+      <h4 class="message">
+        <b>online_tutorials</b> Thank you for the love and supports
+        <span>#cards</span><span>#html</span> <span>#css</span>
+      </h4>
+      <h4 class="comments">View all 245 comments</h4>
+      <div class="addComments">
+        <div class="userImg">
+          <img src="Images/user.jpg" alt="" class="cover" />
+        </div>
+        <input type="text" class="text" placeholder="Add a comment..." />
+      </div>
+      <h5 class="postTime">5 hours ago</h5>
+    </div>
+
+    <script>
+      function likeButton() {
+        let heart = document.querySelector(".heart");
+
+        let likes = document.querySelector(".likes");
+
+        if (heart.src.match("Images/heart.png")) {
+          heart.src = "Images/heart_red.png";
+          likes.innerHTML = "3,649 likes";
+        } else {
+          heart.src = "Images/heart.png";
+          likes.innerHTML = "3,648 likes";
+        }
+      }
+    </script>
+  </body>
+</html>
