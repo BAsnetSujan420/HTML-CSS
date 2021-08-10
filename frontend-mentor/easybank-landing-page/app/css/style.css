@@ -20,6 +20,16 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 64em) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
 .flex {
   display: flex;
 }
@@ -74,6 +84,33 @@ button,
   }
 }
 
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+.header.open .header__toggle > span:first-child {
+  transform: rotate(45deg);
+}
+
+.header.open .header__toggle > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__toggle > span:last-child {
+  transform: rotate(-45deg);
+}
+
+.header .overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#2d314d, transparent);
+}
+
 .header__logo img {
   width: 8.8125rem;
   height: 1.375rem;
@@ -84,6 +121,8 @@ button,
   width: 26px;
   height: 2px;
   background-color: #2d314d;
+  transition: all 300ms ease-in-out;
+  transform-origin: 3px 1px;
 }
 
 .header__toggle > span:not(:last-child) {
@@ -93,6 +132,8 @@ button,
 .header nav {
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
+  position: relative;
+  background-color: white;
 }
 
 .header__links a {
@@ -133,5 +174,65 @@ button,
 
 .header__cta:hover {
   opacity: 0.75;
+}
+
+.header__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  margin-top: 1.5rem;
+  padding: 1.625rem;
+  border-radius: 5px;
+}
+
+.header__menu a {
+  display: block;
+  padding: 0.625rem;
+  color: #2d314d;
+  text-align: center;
+}
+
+.has-fade {
+  visibility: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 200ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fade-out 200ms ease-in-out forwards;
 }
 /*# sourceMappingURL=style.css.map */
