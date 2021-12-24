@@ -1,0 +1,82 @@
+// containers & wrappers
+
+.container {
+  max-width: calc(100% - 30px);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slider-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+section {
+  &:nth-child(2) {
+    padding-top: 60px;
+  }
+}
+
+// card container
+
+.card-container {
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1.5rem;
+
+  .card {
+    .card-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+    }
+
+    > img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  .card-center {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.16);
+    padding: 1.5rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-icon {
+      background: #f6f6f6;
+      border-radius: 50%;
+    }
+  }
+}
+
+@include breakpoint-up(large) {
+  .card-container {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+@include breakpoint-up(medium) {
+  section {
+    &:nth-child(2) {
+      padding-top: 80px;
+    }
+  }
+
+  .container {
+    max-width: calc(100% - 25%);
+  }
+
+  .section-header {
+    padding-top: 3rem;
+  }
+}

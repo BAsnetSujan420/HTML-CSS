@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 18px;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-size: $font-md;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: $font-lg;
+}
+
+h1 {
+  font-size: $font-heading;
+  line-height: 1;
+  margin: 24px 0;
+  max-width: 16ch;
+}
+
+p {
+  color: #717677;
+  letter-spacing: 4%;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.section-header {
+  padding-top: 30px;
+
+  h3 {
+    position: relative;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 0;
+      width: 46px;
+      height: 2px;
+      background: #4f4f4e;
+    }
+  }
+}
