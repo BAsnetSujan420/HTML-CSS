@@ -1,0 +1,60 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal .modal-box {
+  margin: 10% auto;
+  max-width: 700px;
+  background: #fff;
+  color: #333;
+  position: relative;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.modal .modal-body {
+  padding: 0 1.5rem;
+}
+
+.modal-header {
+  padding-left: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal .close {
+  cursor: pointer;
+  height: 23px;
+  width: 23px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal .modal-footer {
+  background: #f7f7f9;
+  color: #333;
+  padding: 1.25rem 3rem;
+  border-top: 1px solid $color-border;
+  display: flex;
+  justify-content: space-between;
+}
+
+@include breakpoint-down(medium) {
+  .modal {
+    .table td .product-item img {
+      display: none;
+    }
+    .modal-footer {
+      padding: 0.625rem;
+    }
+  }
+}

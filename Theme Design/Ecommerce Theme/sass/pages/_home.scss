@@ -1,0 +1,72 @@
+@include breakpoint-up(large) {
+  .special-offers {
+    .card-container {
+      #featured-card {
+        grid-area: 3/1/1/3;
+        margin-right: 2rem;
+        border: 1px solid rgba(0, 0, 0, 0.09);
+        .imgBox {
+          height: 380px;
+        }
+
+        .content-box {
+          text-align: center;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.special-offers {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.625rem;
+
+    @include breakpoint-down(medium) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+}
+
+.shopping-category {
+  .category-container {
+    color: #3c3c3c;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    @include breakpoint-down(medium) {
+      display: flex;
+      overflow-x: auto;
+      margin: 0px -14px;
+    }
+
+    .category {
+      display: grid;
+      place-content: center;
+      text-align: center;
+
+      @include breakpoint-down(medium) {
+        margin: 0 -14px;
+        min-width: 75%;
+      }
+      .imgBox {
+        width: 120px;
+        height: 120px;
+        background: #f9f9f9;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+
+        img {
+          height: 80px;
+          width: 80px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

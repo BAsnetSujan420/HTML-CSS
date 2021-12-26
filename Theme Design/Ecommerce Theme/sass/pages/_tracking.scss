@@ -1,0 +1,125 @@
+.order-complete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .another-process {
+    .btn-link {
+      margin-bottom: 0.625rem;
+    }
+  }
+}
+
+.order-tracking {
+  @include breakpoint-down(medium) {
+    .order-detail {
+      margin-bottom: 2rem;
+    }
+  }
+  .progress-container {
+    @include breakpoint-up(large) {
+      width: 78vw;
+    }
+
+    .circle {
+      @include breakpoint-up(large) {
+        height: 60px;
+        width: 60px;
+
+        i {
+          font-size: 1.875rem;
+        }
+      }
+      &.active {
+        color: #fff;
+        background: #3498db;
+      }
+    }
+
+    .progress {
+      width: 64%;
+    }
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .status-info {
+    text-align: center;
+    @include breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 2rem 0;
+    }
+  }
+  .order-check {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+}
+
+.faq {
+  padding: 1.5rem;
+  background: #f7f7fb;
+  .faq-container {
+    background: #fff;
+    padding: 1rem;
+    .accordion-item {
+      padding-top: 0.625rem;
+      &:hover:not(.open) {
+        background: #e5f0fb;
+      }
+      .accordion-item-title {
+        padding-right: 1.5rem;
+        p {
+          color: #111;
+        }
+      }
+      border-bottom: 1px solid #ddd;
+
+      p {
+        padding-left: 1.5rem;
+        margin: 2px 0;
+        font-size: 0.9375rem;
+      }
+      .accordion-item-body {
+        padding-bottom: 1rem;
+        padding-right: 3rem;
+      }
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    gap: 3rem;
+  }
+  .faq-sidebar {
+    background: #fff;
+    height: 65vh;
+    h4 {
+      padding-left: 1rem;
+    }
+    overflow: auto;
+
+    ul {
+      li a {
+        display: block;
+        padding: 3px 0;
+        padding-left: 2rem;
+
+        &:hover {
+          background: #e5f0fb;
+        }
+      }
+    }
+  }
+}

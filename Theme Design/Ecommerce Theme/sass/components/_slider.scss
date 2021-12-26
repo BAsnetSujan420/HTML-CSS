@@ -1,0 +1,42 @@
+.glide {
+  position: relative;
+  .glide__arrows {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      border: none;
+      outline: none;
+      display: inline-block;
+      padding: 1rem;
+      margin: 0 1rem;
+      border-radius: 50px;
+    }
+  }
+}
+
+.productSlider {
+  .card {
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    .imgBox {
+      height: 300px;
+      @include breakpoint-down(medium) {
+        height: 250px;
+      }
+    }
+    .content-box {
+      padding: 1.2rem 1rem;
+    }
+  }
+}
+
+.featured-products {
+  margin-bottom: 2rem;
+}

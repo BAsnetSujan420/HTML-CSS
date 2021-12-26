@@ -1,0 +1,95 @@
+input,
+select {
+  display: inline-block;
+  // padding: 0.5rem 0.75rem;
+  border-radius: $border-radius;
+  border: 1px solid #e4e4c7;
+  outline: none;
+  background: none;
+  padding: 8px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+select {
+  text-indent: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 40px;
+}
+
+select {
+  width: 100%;
+}
+
+.form-col-2 {
+  @include breakpoint-up(large) {
+    padding: 1rem 0;
+    padding-right: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 4rem;
+  }
+
+  .input-box {
+    label {
+      @include breakpoint-down(medium) {
+        display: block;
+        margin-top: 1rem;
+      }
+    }
+    input {
+      padding: 10px 6px;
+      margin-top: 10px;
+    }
+  }
+  button {
+    max-width: 180px;
+    margin-top: 1rem;
+  }
+}
+
+.count-input {
+  .value-button {
+    display: inline-block;
+    border: 1px solid $color-border;
+    margin: 0px;
+    width: 30px;
+    height: 40px;
+    padding: 6px 0;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+  }
+
+  .value-button:hover {
+    cursor: pointer;
+  }
+
+  input.number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid #ddd;
+    margin-left: -4px;
+    margin-right: -4px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// removing arrows from number input
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

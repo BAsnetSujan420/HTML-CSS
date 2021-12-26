@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+// h4 {
+//   font-weight: 600;
+// }
+
+h1 {
+  font-size: clamp($font-md, calc(2vw + 1rem), $font-lg);
+}
+
+h2 {
+  font-size: clamp($font-md, calc(2vw + 1rem), $font-lg);
+}
+
+h3 {
+  font-size: clamp($font-sm, calc(1vw + 1rem), $font-md);
+  margin-bottom: clamp(0.6875rem, calc(1vw + 0.3rem), 1.125rem);
+}
+
+p,
+span {
+  // font-size: clamp(0.8125rem, 0.875rem, 0.9375rem);
+  font-size: clamp(0.875rem, 0.9375rem, 1rem);
+  margin-top: clamp(0.5rem, 0.7rem, 0.875rem);
+}
+h4 {
+  text-transform: uppercase;
+  margin-bottom: clamp(0.5rem, 0.7rem, 0.875rem);
+}
+
+p,
+h4,
+span {
+  // color: #4f4f4e;
+  color: #212529;
+}
+
+em {
+  font-weight: 600;
+}

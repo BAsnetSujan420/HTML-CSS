@@ -1,0 +1,71 @@
+.my-orders {
+  .container {
+    margin-bottom: 1rem;
+    @include breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: 0.8fr 2fr;
+      gap: 3rem;
+    }
+
+    .user-profile {
+      border: 1px solid $color-border;
+      border-radius: $border-radius;
+      margin-bottom: 1rem;
+      @include breakpoint-up(large) {
+        height: 460px;
+      }
+      .user-profile-top {
+        background: #ccc;
+        height: 90px;
+        width: 100%;
+      }
+      .imgBox {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+      }
+      .user-avatar {
+        width: 100px;
+      }
+
+      .user-profile-heading {
+        a {
+          display: flex;
+          justify-content: space-between;
+          padding: 0.75rem 1.5rem;
+          border-top: 1px solid #ccc;
+
+          .heading {
+            display: flex;
+            align-items: center;
+            i {
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .order-details {
+      .table {
+        td {
+          padding: 0.625rem 0;
+        }
+      }
+    }
+  }
+}
+
+.wishlist-details {
+  .table {
+    .product-item {
+      .product-info {
+        p {
+          > span {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.checkout-process {
+  &.user-detail {
+    .progress-container {
+      .progress {
+        width: 25%;
+      }
+    }
+  }
+
+  .another-process {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    .btn-link {
+      margin-right: 1rem;
+    }
+  }
+  &.shipping-detail {
+    .progress-container {
+      .progress {
+        width: 50%;
+      }
+    }
+
+    @include breakpoint-down(medium) {
+      .responsive-table {
+        .table {
+          th:nth-child(1) {
+            min-width: 25vw;
+          }
+          th:nth-child(2) {
+            min-width: 75vw;
+          }
+        }
+      }
+    }
+  }
+
+  &.payment-detail {
+    .progress-container {
+      .progress {
+        width: 75%;
+      }
+    }
+
+    .accordion-container {
+      @include breakpoint-up(large) {
+        padding: 1.875rem;
+      }
+      .accordion-item {
+        margin-bottom: 0.625rem;
+      }
+      .accordion-item-title {
+        background-color: gainsboro;
+        padding: 0 0.625rem;
+      }
+      .accordion-item-content {
+        padding: 1.25rem;
+        margin: 0px 0px 0.625rem 0px;
+        border: 1px solid $color-border;
+        span {
+          display: flex;
+          align-items: center;
+          img {
+            width: 60px;
+            height: 30px;
+            margin-left: 0.375rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.review-order {
+    .progress-container {
+      .progress {
+        width: 100%;
+      }
+    }
+
+    .product-item {
+      .product-info {
+        .qty {
+          display: inline-block;
+          font-weight: 600;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  .container {
+    position: relative;
+    @include breakpoint-up(large) {
+      padding: 2rem 0;
+    }
+    margin-bottom: 2rem;
+
+    .billing-address {
+      margin-bottom: 2rem;
+    }
+
+    .checkout {
+      //repeated
+      margin-bottom: 1.5rem;
+      display: grid;
+      grid-template-columns: 100%;
+      gap: 1rem;
+      @include breakpoint-up(large) {
+        grid-template-columns: 6fr 4fr;
+        grid-template-areas: "ctable summary";
+        gap: 3rem;
+      }
+
+      .checkout-sidebar {
+        .shopping-cart-summary {
+          border: none;
+          max-height: 15.625rem;
+        }
+
+        @include breakpoint-down(medium) {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          margin-bottom: 3.5rem;
+        }
+
+        .card-container {
+          .card {
+            background-image: url("../images/pic_107.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 21.875rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.review-detail {
+  @include breakpoint-up(large) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

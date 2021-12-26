@@ -1,0 +1,95 @@
+.btn-link {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: $border-radius;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.btn-hl {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.btn-lg {
+  padding-left: 32px;
+  line-height: 2.5rem;
+  font-size: 0.9375rem;
+  padding-right: 32px;
+}
+
+//links
+header .container .dropdown .mega-menu,
+.footer-container {
+  ul li {
+    a {
+      background: linear-gradient(#3c3c3c, #3c3c3c);
+      background-size: 0% 1px;
+      transition: background-size 300ms ease;
+      background-repeat: no-repeat;
+      background-position: 0% 72%;
+      &:hover {
+        background-size: 100% 1px;
+        color: #3c3c3c;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.cart-btn {
+  border-radius: $border-radius;
+  padding: 6px 10px;
+  border: none;
+  width: 2.1875rem;
+  &.remove {
+    background: $color-danger;
+  }
+  &.edit {
+    background: $color-primary;
+  }
+  .fas {
+    color: #fff;
+  }
+}
+
+.btn {
+  outline: none;
+  border: 1px solid $color-border;
+  text-transform: uppercase;
+  border-radius: $border-radius;
+  background: none;
+}
+button {
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.shopping-cart-summary {
+  .btn-checkout {
+    width: 100%;
+    text-align: center;
+    border-radius: $border-radius;
+    background: $color-primary;
+    color: #fff;
+    margin-top: 1.25rem;
+  }
+}
+
+.container .btn-cart {
+  background: $color-secondary;
+  color: #fff;
+}
+
+.container .btn-primary {
+  background: $color-primary;
+  color: #fff;
+}
+
+.btn-link.btn-prev {
+  background: $color-prev-btn;
+  color: #fff;
+}
