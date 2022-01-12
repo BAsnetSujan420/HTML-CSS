@@ -38,6 +38,7 @@ section {
 
 .container {
   width: 85%;
+  max-width: 1128px;
   margin: 0 auto;
 }
 
@@ -68,4 +69,19 @@ section {
 .section-four {
   background-color: #824936;
   color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .intro__title {
+    font-size: 3.75rem;
+  }
 }
