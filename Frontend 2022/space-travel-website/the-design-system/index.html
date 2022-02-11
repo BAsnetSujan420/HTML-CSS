@@ -16,10 +16,10 @@
 
   <body>
     <div class="container">
-      <h1 class="ff-serif">Design system</h1>
+      <h1 class="ff-serif uppercase">Design system</h1>
 
-      <section id="colors">
-        <h2><span>01</span> colors</h2>
+      <section id="colors" style="margin: 4rem 0">
+        <h2 class="numbered-title"><span>01</span> colors</h2>
 
         <div class="flex">
           <div style="flex-grow: 1">
@@ -56,9 +56,9 @@
       </section>
 
       <section id="typography" style="margin: 4rem 0">
-        <h2><span>02 </span>Typography</h2>
+        <h2 class="numbered-title"><span>02 </span>Typography</h2>
         <div class="flex">
-          <div style="flex-basis: 100%">
+          <div class="flow" style="flex-basis: 100%">
             <div>
               <p class="text-accent">Heading 1 - Bellefair Regular - 150px</p>
               <p class="fs-900 ff-serif uppercase">Earth</p>
@@ -86,7 +86,7 @@
             </div>
           </div>
 
-          <div style="flex-basis: 100%">
+          <div class="flow" style="flex-basis: 100%">
             <div>
               <p class="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
               <p class="fs-500 ff-serif uppercase">384,400 km</p>
@@ -126,6 +126,98 @@
                 Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
                 dapibus id, mattis vel, nisi.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow" id="interactive-elements">
+        <h2 class="numbered-title"><span>03</span> interactive elements</h2>
+
+        <!-- navigation -->
+        <div style="margin: 4em 0 8em">
+          <nav>
+            <ul class="primary-navigation underline-indicators flex">
+              <li class="active">
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>01</span> Active</a
+                >
+              </li>
+              <li>
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>02</span> Hovered</a
+                >
+              </li>
+              <li>
+                <a class="uppercase text-white letter-spacing-2" href="#"
+                  ><span>03</span> Idle</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex">
+          <div>
+            <!--explore button -->
+            <a
+              href="#"
+              class="large-button uppercase ff-serif fs-600 text-dark bg-white"
+            >
+              Explore</a
+            >
+          </div>
+
+          <div
+            class="flow grid"
+            style="
+              --flow-space: 4rem;
+              width: 100%;
+              justify-content: center;
+              margin-bottom: 5em;
+            "
+          >
+            <!-- Tabs -->
+            <div class="tab-list underline-indicators flex">
+              <button
+                aria-selected="true"
+                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+              >
+                Moon
+              </button>
+              <button
+                aria-selected="false"
+                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+              >
+                Mars
+              </button>
+              <button
+                aria-selected="false"
+                class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+              >
+                Europa
+              </button>
+            </div>
+
+            <!-- dots -->
+
+            <div class="dot-indicators flex">
+              <button aria-selected="true">
+                <span class="sr-only"> Slide title </span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only"> Slide title </span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only"> Slide title </span>
+              </button>
+            </div>
+
+            <!-- numbers -->
+            <div class="dot-indicators number-indicators flex">
+              <button aria-selected="true">1</button>
+              <button aria-selected="false">2</button>
+              <button aria-selected="false">3</button>
             </div>
           </div>
         </div>
