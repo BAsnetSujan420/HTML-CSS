@@ -1,0 +1,99 @@
+/* ---------------- */
+/* Reset            */
+/* ---------------- */
+
+/* box sizixng */
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* reset margins  */
+body,
+h1,
+h2,
+h3,
+h4,
+p p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* image styles */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* form styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------------ */
+/* Utility classes          */
+/* ----------------------- */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2em;
+  max-width: 80rem;
+  margin-inline: auto;
+}
+
+/* screen reader only - visually hide element */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: no-wrap;
+  border: 0;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 3rem;
+}
+
+.boxes {
+  --gap: 3rem;
+  background-color: lightpink;
+  padding: 1rem;
+}
