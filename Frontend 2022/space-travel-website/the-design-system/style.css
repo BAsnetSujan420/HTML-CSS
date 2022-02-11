@@ -1,3 +1,13 @@
+/* --------------------- */
+/* Custom properties     */
+/* --------------------- */
+
+:root {
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+}
+
 /* ---------------- */
 /* Reset            */
 /* ---------------- */
@@ -87,13 +97,31 @@ select {
   border: 0;
 }
 
-.box {
-  background-color: lightblue;
-  padding: 3rem;
+/* colors */
+.bg-dark {
+  background-color: hsl(var(--clr-dark));
 }
 
-.boxes {
-  --gap: 3rem;
-  background-color: lightpink;
-  padding: 1rem;
+.bg-accent {
+  background-color: hsl(var(--clr-light));
+}
+
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+
+.text-accent {
+  color: hsl(var(--clr-light));
+}
+
+.text-white {
+  color: hsl(var(--clr-white));
+}
+
+.color-component {
+  background-color: hsl(var(--clr-light) / 0.2);
 }
