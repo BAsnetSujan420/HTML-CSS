@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="the-design-system/style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body class="home">
     <header class="primary-header flex">
@@ -22,8 +23,14 @@
           class="logo"
         />
       </div>
-      <!-- <nav>
-        <ul class="primary-navigation underline-indicators flex">
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+      <nav>
+        <ul
+          class="primary-navigation underline-indicators flex"
+          data-visible="false"
+        >
           <li class="active">
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
@@ -54,7 +61,7 @@
             </a>
           </li>
         </ul>
-      </nav> -->
+      </nav>
     </header>
 
     <main class="grid-container grid-container--home">
